@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/RedBeard41/alien_Invasion_starter
+	tagOpt = --no-tags
+	fetch = +refs/*:refs/*
+	mirror = true
