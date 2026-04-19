@@ -57,7 +57,14 @@ class AlienInvasion:
 
             #subract one life if possible
 
-        
+        #check collisions for aliens and bottom of screen
+        if self.alien_fleet.check_fleet_bottom():
+            self._reset_level()
+        #check collision of projectiles and aliens
+        collisions = self.alien_fleet.check_collisions(self.ship.arsenal.arsenal)
+        if collisions:
+            self.impact_sound.play()
+            self.impact_sound.fadeout(500)
 
     
         
